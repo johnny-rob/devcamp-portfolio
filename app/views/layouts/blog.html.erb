@@ -17,10 +17,12 @@
 <!-- This is a helper instance, pulling from code written in the appropriate helper file -->
     <%= login_helper %>
 
+<!-- This pulls in the content of the page that is unique to it as defined in the controller and server-->
     <%= yield %>
 
     <%= render "shared/nav", location:'bottom' %>
 
+<!-- This is a content-helper instance, pulling from code written in the application_helper file -->
     <%= source_helper("blog") %>
 
   </body>

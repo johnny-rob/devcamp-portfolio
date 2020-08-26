@@ -15,11 +15,13 @@
 
     <%= render "shared/nav", location:'top' %>
 
-<!-- This is a helper instance, pulling from code written in the appropriate helper file -->
+<!-- This is a helper instance, pulling from code written in the application_helper file -->
     <%= login_helper %>
 
+<!-- This pulls in the content of the page that is unique to it as defined in the controller and server-->
     <%= yield %>
 
+<!-- This is a content-helper instance, pulling from code written in the application_helper file -->
     <%= source_helper("application")%>
 
   </body>
