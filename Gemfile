@@ -50,3 +50,4 @@ gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'bootstrap', '~> 5.0.0.alpha1'
 gem 'jquery-rails'
 gem 'pinney_view_tool', git: "https://github.com/johnny-rob/pinney_view_tool"
+gem 'petergate', '~> 2.0', '>= 2.0.1'
