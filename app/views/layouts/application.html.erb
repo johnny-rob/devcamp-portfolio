@@ -12,23 +12,21 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-    <%= render "shared/nav", location:'top' %>
+      <%= render "shared/application_nav"%>
 
-<!-- This is a helper instance, pulling from code written in the application_helper file -->
-    <%= login_helper %>
+      <!-- This is a helper instance, pulling from code written in the application_helper file -->
+      <%= login_helper %>
 
-<!-- This pulls in the content of the page that is unique to it as defined in the controller and server-->
-    <%= yield %>
+      <!-- This pulls in the content of the page that is unique to it as defined in the controller and server-->
+      <%= yield %>
 
-<!-- This is YOUR homemade gem -->
-    <br><%= copyright_generator %>
+      <!-- This is YOUR homemade gem -->
+      <br><%= copyright_generator %>
 
-<!-- This is a content-helper instance, pulling from code written in the application_helper file -->
-    <%= source_helper("application")%>
-
+      <!-- This is a content-helper instance, pulling from code written in the application_helper file -->
+      <%= source_helper("application")%>
   </body>
 </html>
