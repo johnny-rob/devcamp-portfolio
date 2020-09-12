@@ -17,16 +17,14 @@
 
       <%= render "shared/application_nav"%>
 
-      <!-- This is a helper instance, pulling from code written in the application_helper file -->
-      <%= login_helper %>
-
       <!-- This pulls in the content of the page that is unique to it as defined in the controller and server-->
       <%= yield %>
 
-      <!-- This is YOUR homemade gem -->
-      <br><%= copyright_generator %>
+      <!-- This is YOUR homemade gem in the footer-->
+      <%= render "shared/application_footer"%>
 
       <!-- This is a content-helper instance, pulling from code written in the application_helper file -->
       <%= source_helper("application")%>
+    </div>
   </body>
 </html>
