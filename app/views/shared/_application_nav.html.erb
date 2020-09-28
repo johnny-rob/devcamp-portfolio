@@ -1,13 +1,8 @@
 <header class="masthead mb-auto">
   <div class="inner">
     <h3 class="masthead-brand">Jonathan Pinney</h3>
-    <nav class="nav nav-masthead justify-content-center">
-      <%= link_to "Home", root_path, class: "nav-link" %>
-      <%= link_to "About", about_me_path, class: "nav-link" %>
-      <%= link_to "Contact", contact_path, class: "nav-link" %>
-      <%= link_to "Blog", blogs_path, class: "nav-link" %>
-      <%= link_to "Portfolio", portfolios_path, class: "nav-link" %>
-<!-- This is a helper instance, pulling from code written in the application_helper file -->
+    <nav class="nav nav-masthead justify-content-center app-nav">
+      <%= nav_helper 'nav_link', 'span'%>
       <%= login_helper 'nav-link' %>
     </nav>
   </div>
