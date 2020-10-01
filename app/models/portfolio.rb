@@ -5,7 +5,8 @@ class Portfolio < ApplicationRecord
 
   include Placeholder
   validates_presence_of :title, :body, :main_image, :thumb_image
-
+  acts_as_list
+  
   def self.angular
     where(subtitle: 'Angular')
   end
@@ -13,7 +14,7 @@ class Portfolio < ApplicationRecord
   def self.by_position
     order("position ASC")
   end
-  
+
   scope :ruby_on_rails_portfolio_items, -> {where(subtitle: 'Ruby on Rails')}
 
   after_initialize :set_defaults

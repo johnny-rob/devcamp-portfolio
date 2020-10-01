@@ -20,3 +20,5 @@ require("channels")
 //= require jquery-ui
 //= require popper
 //= require bootstrap-sprockets
+
+import "controllers"
