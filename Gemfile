@@ -53,3 +53,5 @@ gem 'pinney_view_tool', git: "https://github.com/johnny-rob/pinney_view_tool"
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'kaminari', '~> 1.2', '>= 1.2.1'
+gem 'jquery-ui-rails'
+gem "acts_as_list", "~> 1.0"
