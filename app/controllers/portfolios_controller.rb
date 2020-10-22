@@ -38,7 +38,7 @@ class PortfoliosController < ApplicationController
   def update
 
     respond_to do |format|
-      if @portfolio_item.update(portfolio_params)
+      if @portfolio_items.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: 'Record was successfully updated.' }
         format.json { render :show, status: :ok, location: @portfolio_items }
       else
@@ -56,14 +56,14 @@ class PortfoliosController < ApplicationController
 
 
     #redirect
-    @portfolio_item.destroy
+    @portfolio_items.destroy
     respond_to do |format|
       format.html { redirect_to portfolios_url, notice: 'Portfolio item was successfully destroyed.' }
     end
   end
 
   def move
-    @portfolio_item.insert_at(params[:position].to_i)
+    @portfolio_items.insert_at(params[:position].to_i)
   end
 
   private
@@ -78,7 +78,7 @@ class PortfoliosController < ApplicationController
   end
 
   def set_portfolio_item
-    @portfolio_item = Portfolio.find(params[:id])
+    @portfolio_items = Portfolio.find(params[:id])
   end
 
 end
