@@ -6,7 +6,7 @@ class Blog < ApplicationRecord
   validates_presence_of :title, :body
   paginates_per 5
 
-  belongs_to :topic
+  belongs_to :topic, optional:true
   def self.special_blogs
     all
   end
