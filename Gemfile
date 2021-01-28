@@ -56,3 +56,4 @@ gem 'kaminari', '~> 1.2', '>= 1.2.1'
 gem 'jquery-ui-rails'
 gem "acts_as_list", "~> 1.0"
 gem "cocoon"
+gem 'gritter', '~> 1.2'
