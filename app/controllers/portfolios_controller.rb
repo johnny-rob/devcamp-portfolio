@@ -14,20 +14,19 @@ class PortfoliosController < ApplicationController
 
   # GET /Portfolios/new
   def new
-    @portfolio_items = Portfolio.new
-    3.times { @portfolio_items.technologies.build }
+    @portfolio_item = Portfolio.new
   end
 
   def create
-    @portfolio_items = Portfolio.new(portfolio_params)
+    @portfolio_item = Portfolio.new(portfolio_params)
 
     respond_to do |format|
-      if @portfolio_items.save
+      if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully created.' }
-        format.json { render :show, status: :created, location: @portfolio_items }
+        format.json { render :show, status: :created, location: @portfolio_item }
       else
         format.html { render :new }
-        format.json { render json: @portfolio_items.errors, status: :unprocessable_entity }
+        format.json { render json: @portfolio_item.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -71,7 +70,7 @@ class PortfoliosController < ApplicationController
     params.require(:portfolio).permit(:title,
                                       :subtitle,
                                       :body,
-                                      technologies_attributes: [:name]
+                                      technologies_attributes: [:id, :name, :_destroy]
                                     )
   end
 
