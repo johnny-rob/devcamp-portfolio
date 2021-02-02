@@ -23,7 +23,7 @@ module ApplicationHelper
     PinneyViewTool::Renderer.copyright 'Jonathan Pinney', 'All rights reserved.'
   end
 
-## The next two def sections work together to create the nav items 
+## The next two def sections work together to create the nav items
   def nav_items
     [
       {
@@ -61,6 +61,23 @@ module ApplicationHelper
   def active? path
     "active" if current_page? path
   end
+
+  def alerts
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
+
+    if alert
+      alert_generator alert
+    end
+  end
+
+  def alert_generator msg
+    js add_gritter(msg, title: "Jonathan Pinney's Portfolio", sticky: false)
+  end
+
+
+
+
+
 
 
 end
