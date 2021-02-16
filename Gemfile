@@ -57,3 +57,4 @@ gem 'jquery-ui-rails'
 gem "acts_as_list", "~> 1.0"
 gem "cocoon"
 gem 'gritter', '~> 1.2'
+gem 'twitter', '~> 7.0'
