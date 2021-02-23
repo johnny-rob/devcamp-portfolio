@@ -5,6 +5,7 @@
 
 require("@rails/ujs").start()
 require("packs/html.sortable")
+require("cable") //This may not be necessary with rails 6
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("jquery")
