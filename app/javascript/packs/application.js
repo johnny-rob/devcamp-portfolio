@@ -19,10 +19,10 @@ require("gritter/js/jquery.gritter.js")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-//= require jquery
-//= require jquery_ujs
-//= require jquery-ui
-//= require popper
-//= require bootstrap-sprockets
+
 
 import "controllers"
+
+require('lib/following');
+require('trix');
+require('@rails/actiontext');

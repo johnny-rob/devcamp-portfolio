@@ -59,3 +59,5 @@ gem "cocoon"
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 7.0'
 gem 'redis', '~> 4.2', '>= 4.2.5'
+gem 'barista', '~> 1.3'
+gem 'therubyracer', '~> 0.12.3'
