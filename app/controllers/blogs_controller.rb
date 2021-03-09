@@ -14,6 +14,7 @@ class BlogsController < ApplicationController
     @page_title = "My Portfolio Blog"
   end
 
+  #Testing fastforward merge
   # GET /blogs/1
   # GET /blogs/1.json
   def show
