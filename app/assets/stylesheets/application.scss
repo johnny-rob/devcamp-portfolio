@@ -1,6 +1,11 @@
 @import "bootstrap";
 @import "gritter";
-
+/*
+ * ...
+ *
+ *= require_tree .
+ *= require_self
+ */
 /*
  * Globals
  */
@@ -183,4 +188,8 @@ a {
 .app-card-container a{
   color: black;
   text-decoration: none;
+}
+.card-body {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
