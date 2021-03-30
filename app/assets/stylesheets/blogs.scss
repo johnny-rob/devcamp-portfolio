@@ -18,8 +18,18 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+body{
+    font-family: 'Lato', sans-serif;
+    color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
 }
 
 .display-4 {
@@ -99,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
  * Footer
  */
 .blog-footer {
+  margin-top: 20px;
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
@@ -117,4 +128,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 .social-links li {
   font-size: 1.5em;
+}
+
+.comment-card > .card {
+  margin-top: 15px;
+}
+
+.comment-attribution {
+  font-size:.8em;
+  font-style: italic;
+}
+
+.comment-name {
+  font-weight: bold;
+}
+
+.blogcrumb a{
+  font-size: 1.25em;
+  margin: 0px 6px;
 }

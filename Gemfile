@@ -58,3 +58,8 @@ gem "acts_as_list", "~> 1.0"
 gem "cocoon"
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 7.0'
+gem 'redis', '~> 4.2', '>= 4.2.5'
+gem 'barista', '~> 1.3'
+gem 'mini_racer', '~> 0.3.1'
+gem 'redcarpet', '~> 3.5', '>= 3.5.1'
+gem 'coderay', '~> 1.1', '>= 1.1.3'

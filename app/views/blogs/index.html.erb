@@ -45,11 +45,9 @@
         From the Firehose
       </h3>
       <%= paginate @blogs %><br>
-      <h4><%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %></h4>
-      <br>
-        <%= render @blogs%>
-    <!-- /.blog-post -->
 
-    <%= paginate @blogs %>
+      <%= render @blogs%>
+
+      <%= paginate @blogs %>
 
   </div><!-- /.blog-main -->
