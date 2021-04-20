@@ -67,3 +67,5 @@ gem 'carrierwave', '~> 2.2', '>= 2.2.1'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
 gem 'mini_magick', '~> 4.11'
 gem 'carrierwave-aws', '~> 1.5'
+
+ruby "2.7.0"
