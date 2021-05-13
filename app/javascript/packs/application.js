@@ -21,4 +21,6 @@ require("gritter/js/jquery.gritter.js")
 
 import "controllers"
 
+
 require('lib/following');
+console.log('Hello from application.js')
